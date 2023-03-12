@@ -8,7 +8,7 @@
     "test": "node dist/test/EntryPoint"
   },
   "devDependencies": {
-    "@raccoons-co/cleanway": "^0.1.1",
+    "@raccoons-co/cleanway": "^0.2.0",
     "typescript": "^4.9.5"
   }
 }
