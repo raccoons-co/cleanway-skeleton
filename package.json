@@ -1,6 +1,6 @@
 {
   "name": "cleanway-skeleton",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "Write YourTest cases, fail fast and have a nice journey in the Node.js galaxy.",
   "scripts": {
     "build": "tsc",
