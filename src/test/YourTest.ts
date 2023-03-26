@@ -1,4 +1,5 @@
-import {Immutable, Test} from "@raccoons-co/cleanway";
+import {Immutable} from "@raccoons-co/ethics";
+import {Test} from "@raccoons-co/cleanway";
 import {assert} from "chai";
 
 @Immutable
