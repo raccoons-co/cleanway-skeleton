@@ -2,5 +2,5 @@ import {CleanWayBuilder} from "@raccoons-co/cleanway";
 import YourTest from "./YourTest";
 
 CleanWayBuilder.instance()
-    .assign(new YourTest())
+    .use(YourTest)
     .build();
