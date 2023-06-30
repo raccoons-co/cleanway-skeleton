@@ -1,12 +1,12 @@
 import {Immutable} from "@raccoons-co/ethics";
-import {Test, TestClass} from "@raccoons-co/cleanway";
+import {AfterEach, Test, TestClass} from "@raccoons-co/cleanway";
 import {assert} from "chai";
 
 @Immutable
 @TestClass
 export default class YourTest {
 
-    private readonly property = "For your clean code.";
+    private property = "For your clean code.";
 
     @Test
     public nothing(): void {
@@ -23,7 +23,12 @@ export default class YourTest {
         assert.equal(this.property, "For your clean code.");
     }
 
+    @AfterEach
+    public tearDown(): void {
+        this.property = "";
+    }
+
     private method(): string {
-        return "More assertions."
+        return "More assertions.";
     }
 }
