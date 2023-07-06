@@ -5,6 +5,7 @@ import {
     Arguments,
     ArgumentsSource,
     ParametrizedTest,
+    RepeatedTest,
     Test,
     TestClass
 } from "@raccoons-co/cleanway";
@@ -30,7 +31,7 @@ export default class YourTest {
         assert.isNumber(parameter2);
     }
 
-    @Test
+    @RepeatedTest(3)
     public matters() {
         assert.equal(this.property, "For your clean code.");
     }
