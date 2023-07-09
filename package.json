@@ -1,6 +1,6 @@
 {
   "name": "cleanway-skeleton",
-  "version": "2.1.0",
+  "version": "2.5.0",
   "description": "Write YourTest cases, fail fast and have a nice journey in the Node.js galaxy.",
   "keywords": [
     "TypeScript",
@@ -31,10 +31,10 @@
     "test": "nyc ts-node src/test/EntryPoint"
   },
   "dependencies": {
-    "@raccoons-co/ethics": "^0.2.3"
+    "@raccoons-co/ethics": "^0.2.4"
   },
   "devDependencies": {
-    "@raccoons-co/cleanway": "^2.4.1",
+    "@raccoons-co/cleanway": "^2.5.0",
     "@types/chai": "^4.3.5",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",

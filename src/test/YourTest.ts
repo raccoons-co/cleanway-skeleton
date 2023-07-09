@@ -4,7 +4,8 @@ import {
     AfterEach,
     Arguments,
     ArgumentsSource,
-    ParametrizedTest,
+    BeforeEach,
+    ParameterizedTest,
     RepeatedTest,
     Test,
     TestClass
@@ -14,14 +15,19 @@ import {
 @TestClass
 export default class YourTest {
 
-    private property = "For your clean code.";
+    private property = "";
+
+    @BeforeEach
+    public setUp(): void {
+        this.property = "For your clean code.";
+    }
 
     @Test
     public nothing(): void {
         assert.ok("But your assertions here.");
     }
 
-    @ParametrizedTest
+    @ParameterizedTest
     @ArgumentsSource(Array.of(
         new Arguments("More assertions.", 1)
     ))
