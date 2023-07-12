@@ -36,7 +36,6 @@ jobs:
     steps:
       - checkout
       - codecov/upload
-        parameters:
           xtra_args: "--nonZero"
 
 workflows:
