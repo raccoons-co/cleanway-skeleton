@@ -35,8 +35,9 @@ jobs:
     executor: docker
     steps:
       - checkout
-      - codecov/upload
-        parameters: { "xtra_args": "--nonZero" }
+      - codecov/upload:
+          xtra_args: "--nonZero"
+
 workflows:
   simple:
     jobs:
