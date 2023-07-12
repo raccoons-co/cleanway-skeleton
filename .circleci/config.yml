@@ -31,6 +31,14 @@ jobs:
       - run: npm test
       - run: npm pack
 
+  upload-code-coverage:
+    executor: docker
+    steps:
+      - checkout
+      - codecov/upload
+        parameters:
+          xtra_args: "--nonZero"
+
 workflows:
   simple:
     jobs:
@@ -40,9 +48,4 @@ workflows:
             parameters:
               os: [docker, linux, macos]
               node-version: ["latest", "lts"]
-      - node/test:
-          name: upload-code-coverage
-          post-steps:
-            - codecov/upload
-              parameters:
-                xtra_args: "--nonZero"
+      - upload-code-coverage
