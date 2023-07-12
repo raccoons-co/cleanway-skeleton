@@ -44,4 +44,5 @@ workflows:
           name: upload-code-coverage
           post-steps:
             - codecov/upload
-              xtra_args: "--nonZero"
+              parameters:
+                xtra_args: "--nonZero"
