@@ -1,6 +1,6 @@
 {
   "name": "cleanway-skeleton",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "Write YourTest cases, fail fast and have a nice journey in the Node.js galaxy.",
   "keywords": [
     "TypeScript",
