@@ -8,8 +8,9 @@ Cleanway Skeleton
 
 This is public template for creating a new repository to start TypeScript project.
 
-It has pre-installed dependencies that you can review at 
-[package.json](https://github.com/raccoons-co/cleanway-skeleton/blob/master/package.json) file.
+It has pre-installed dependencies that you can review in the 
+[package.json](https://github.com/raccoons-co/cleanway-skeleton/blob/master/package.json) file, 
+a test *EntryPoint*, and sample files.
 
 Please review repositories [Clean Way](https://github.com/raccoons-co/cleanway),
 [Ethics](https://github.com/raccoons-co/ethics) 
